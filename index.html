@@ -1,61 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Adam Smith" />
+<meta name="description" content="Adam Smith - Content Designer" />
+<meta name="robots" content="noodp,noydir" />
+<title>Adam Smith - Content Designer</title>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link href="/style.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap" rel="stylesheet">
-  <link </head> <body>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161171657-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  <div class="topnav" id="myTopnav">
-    <a href="/index.html" class="active">Work</a>
-    <a href="#news">About me</a>
-    <a href="#contact">Contact</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-  <div class="name">
-    <a href="/index.html">Adam Smith</a>
-  </div>
+    gtag('config', 'UA-161171657-1');
 
-  <div class="main">
-    <p>Responsive Topnav Example</p>
-    <p>Resize the browser window to see how it works.</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text <a href="#">link me</a> some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-  </div>
+  </script>
 
+</head>
+
+<body>
+
+  <!-- Hero -->
+  <section class="et-hero-tabs">
+    <h1>ADAM SMITH</h1>
+    <p>Scroll down to see more!<p>
+        <a class="chevron" href="#tab-work"><i class="fa faw fa-chevron-down"></i></a>
+        <div class="et-hero-tabs-container">
+          <a class="et-hero-tab" href="#tab-work">Work</a>
+          <a class="et-hero-tab" href="#tab-about">About</a>
+          <a class="et-hero-tab" href="#tab-contact">Contact</a>
+          <span class="et-hero-tab-slider"></span>
+        </div>
+  </section>
+
+  <!-- Main -->
+  <main class="et-main">
+    <section class="et-slide" id="tab-work">
+      <h1>Work</h1>
+      <p>This is a list of stuff I've done that's really super interesting and you can go off and read about it and maybe you'll give me a job if you're feeling nice<br><br>Thing 1<br>Thing 2<br>Thing 3
+      </p>
+
+    </section>
+    <section class="et-slide" id="tab-about">
+      <h1>About</h1>
+      <p>I'm a Content Designer with a background in content strategy and user experience. Currently, I'm a Content Designer at Citizens Advice.<br><br>As a content designer, I create user-centred content that puts user needs first. I use analytics, user research and feedback to inform content decisions.<br><br>I design content that meets user needs using Plain English. I develop content patterns, content plans and user journeys for complex subject areas.</p>
+    </section>
+    <section class="et-slide" id="tab-contact">
+      <h1>Contact</h1>
+      <p>You can <a href="mailto:smifaye@gmail.com">email me</a><br><br>You can also find me on <a target="_blank" href="https://www.instagram.com/smifaye/">Instagram</a> - mainly taking pictures of trees and buildings</p>
+    </section>
+  </main>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://use.fontawesome.com/8939255d20.js"></script>
   <script src="/index.js"></script>
+</body>
 
-  </body>
-
-  <footer>
-    <a href="mailto:smifaye@gmail.com"><i class="fa fa-fw fa-envelope"></i></a>
-    <a href="http://instagram.com/smifaye/"><i class="fa fa-fw fa-instagram"></i></a>
-    <p>Copyright © 2020 Adam Smith</p>
-  </footer>
+<footer>
+  <p>Copyright © 2020 Adam Smith</p>
+</footer>
 
 </html>
