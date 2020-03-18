@@ -113,7 +113,10 @@ footer {
   font-size: 1rem;
 }
 
-#tab-work,
+#tab-work {
+  padding: 0 2rem;
+}
+
 #tab-about {
   padding: 0 2rem;
   text-align: justify;
@@ -136,9 +139,121 @@ footer {
     font-size: 1rem;
   }
 
-  #tab-work,
   #tab-about {
     padding: 0 15rem;
   }
 
+  #tab-work {
+    padding: 1rem 10rem;
+  }
+
+}
+
+/*Testing image grids*/
+
+.expanding-grid {
+  position: relative;
+  width: 100%;
+}
+
+.links {
+  display: block;
+  margin: 0 -1em;
+  overflow: hidden;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.links > li {
+  box-sizing: border-box;
+  float: left;
+  padding: 1em;
+}
+
+.links > li a {
+  display: block;
+  font-size: 1em;
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.links > li:hover a {
+  opacity: 0.75;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: opacity ease 0.5s;
+  -moz-transition: opacity ease 0.5s;
+  transition: opacity ease 0.5s;
+}
+
+.text {
+  color: #2f2f2f;
+  background-color: #fdfdfd;
+  padding: 1em;
+}
+
+.mobile-text {
+  text-decoration: none;
+  color: #2f2f2f;
+  padding: 1em 0 0 0;
+}
+
+.links > li:hover a .middle {
+  opacity: 1;
+}
+
+.links > li img {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 39.99em) {
+  .middle {
+    display: none;
+  }
+
+  .links_blog > li {
+    border-bottom: 0px;
+  }
+}
+
+/* Tablet devices */
+@media only screen and (min-width: 40em) and (max-width: 59.99em) {
+  .mobile-text {
+    display: none;
+  }
+}
+
+/* Desktop devices */
+@media only screen and (min-width: 60em) {
+  .mobile-text {
+    display: none;
+  }
+}
+
+.links > li {
+  width: 33.3333333333%;
+}
+
+.links > li:nth-of-type(3n+1) {
+  clear: left;
 }
