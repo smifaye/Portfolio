@@ -30,14 +30,16 @@ a {
 }
 
 .et-hero-tabs h1,
-.et-slide h1 {
+.et-slide h1,
+.et-slide-work h1 {
   font-size: 2em;
   margin: 0;
   letter-spacing: 0.5rem;
 }
 
 .et-hero-tabs h3,
-.et-slide h3 {
+.et-slide h3,
+.et-slide-work h3 {
   font-size: 1rem;
   letter-spacing: 0.15rem;
   opacity: 0.6;
@@ -63,7 +65,23 @@ a {
   top: 0;
 }
 
-.et-hero-tab {
+.et-hero-tabs-container-work {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background: #F7AD9B;
+  z-index: 10;
+}
+
+.et-hero-tab,
+.et-hero-tab-work {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
@@ -79,7 +97,8 @@ a {
   font-size: 1rem;
 }
 
-.et-hero-tab:hover {
+.et-hero-tab:hover,
+.et-hero-tab-work:hover {
   color: #333333;
   background: #F39385;
   -webkit-transition: all 0.5s ease;
@@ -130,12 +149,14 @@ footer {
 @media (min-width: 800px) {
 
   .et-hero-tabs h1,
-  .et-slide h1 {
+  .et-slide h1,
+  .et-slide-work h1 {
     font-size: 3rem;
   }
 
   .et-hero-tabs h3,
-  .et-slide h3 {
+  .et-slide h3,
+  .et-slide-work h3 {
     font-size: 1rem;
   }
 
@@ -146,7 +167,17 @@ footer {
   #tab-work {
     padding: 1rem 10rem;
   }
+  
+  .work {
+    margin-top: 15em;
+  }
 
+}
+
+@media (max-width: 799px) {
+  .work {
+    margin-top: 6em;
+  }
 }
 
 /*Testing image grids*/
@@ -256,4 +287,19 @@ ul {
 
 .links > li:nth-of-type(3n+1) {
   clear: left;
+}
+
+.et-slide-work {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  padding: 0 2em;
 }
